@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 10 Assignment</title>
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Week 10</a>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm">
+              <div class="form-group">
+                <label for="new-make"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="new-make"
+                  placeholder="Make"
+                />
+                <label for="new-model"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="new-model"
+                  placeholder="Model"
+                />
+                <label for="new-year"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="new-year"
+                  placeholder="Year"
+                />
+                <label for="new-color"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="new-color"
+                  placeholder="Color"
+                />
+              </div>
+            </div>
+          </div>
+          <button id="add" class="btn btn-primary form-control">Create</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm">
+              <table id="list" class="table table-dark table-striped">
+                <tr>
+                  <th>Make</th>
+                  <th>Model</th>
+                  <th>Year</th>
+                  <th>Color</th>
+                  <th>Actions</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="car.js"></script>
+  </body>
+</html>
